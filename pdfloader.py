@@ -72,7 +72,6 @@ embeddings = HuggingFaceBgeEmbeddings(
     encode_kwargs={'normalize_embeddings': True}
 )
 print(f"Using Embedding Model: {EMBEDDING_MODEL_NAME}")
-
 # 3b. Create the Vector Store (Index) from chunks
 # Chroma.from_documents handles generating embeddings and storing them.
 vectorstore = Chroma.from_documents(
